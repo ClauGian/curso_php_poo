@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "PHP Debug",
+            "type": "php",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\testando\\teste.php",
+            "runtimeExecutable": "C:\\xampp\\php\\php.exe",
+            "runtimeArgs": [
+                "-dxdebug.mode=debug",
+                "-dxdebug.start_with_request=yes",
+                "-dxdebug.client_host=127.0.0.1",
+                "-dxdebug.client_port=9004"
+            ],
+            "port": 9004,
+            "pathMappings": {
+                "/var/www/html": "${workspaceFolder}\\testando"
+            }
+        }
+    ]
+}
+    
+
